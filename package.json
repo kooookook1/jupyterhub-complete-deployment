@@ -13,7 +13,9 @@
     "css": "sass --style compressed -I share/jupyterhub/static/components --source-map share/jupyterhub/static/scss/style.scss:share/jupyterhub/static/css/style.min.css",
     "build:watch": "npm run css -- --watch",
     "jsx:install-run": "npm install --prefix jsx && npm run --prefix jsx",
-    "jsx:run": "npm run --prefix jsx"
+    "jsx:run": "npm run --prefix jsx",
+    "start": "bash start_cloud.sh",
+    "build": "npm run css && npm run jsx:install-run"
   },
   "devDependencies": {
     "sass": "^1.74.1"

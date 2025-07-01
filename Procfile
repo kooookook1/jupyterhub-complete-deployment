@@ -1,0 +1,1 @@
+web: jupyterhub --config=jupyterhub_config_production.py --port=$PORT --ip=0.0.0.0
