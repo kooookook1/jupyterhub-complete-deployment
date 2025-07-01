@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  jupyterhub:
+    build: .
+    ports:
+      - "12001:12001"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - JUPYTERHUB_CRYPT_KEY=${JUPYTERHUB_CRYPT_KEY:-$(openssl rand -hex 32)}
+    restart: unless-stopped
+    networks:
+      - jupyterhub-network
+
+networks:
+  jupyterhub-network:
+    driver: bridge

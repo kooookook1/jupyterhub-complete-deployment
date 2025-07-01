@@ -1,0 +1,97 @@
+# JupyterHub Deployment .gitignore
+
+# Database files
+*.sqlite
+*.db
+
+# Log files
+*.log
+
+# PID files
+*.pid
+
+# Cookie secret
+jupyterhub_cookie_secret
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Runtime directories
+runtime/
+data/
+
+# Backup files
+*.bak
+*.backup
+
+# Keep important files (add ! to include)
+!jupyterhub_config_production.py
+!start_jupyterhub.sh
+!test_complete_functionality.py
+!README_COMPLETE.md
+!DEPLOYMENT_README.md
